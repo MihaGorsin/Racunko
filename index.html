@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Računko</title>
+
+
+        <link rel ="stylesheet" href='index.css'>
+
+</head>
+<body>
+    <div class="bg-secondary ">
+        <div class="d-flex p-2 container ">
+            <div class="input-group">
+                <input id="narocnikVnos" class="form-control" placeholder="Naročnik">
+                <input id="storitevVnos" class="form-control" placeholder="Storitev">
+                <input id="cenaVnos"  class="form-control"placeholder="Cena">
+            </div>
+            <button id="gumbVnos" class="btn btn-warning">Izdelaj račun</button>
+            <button id="gumbPrenos" class="btn btn-success">Izvozi račun</button>
+        </div>
+    </div>
+    <div class=" p-2 container "  id="exportContent">
+        <br>
+        <br>
+        <p>GZS, Dimičeva cesta 13, Ljubljana</p>
+        <b><p>OBRAZEC ZA INTERNO PREKLJIŽBO STROŠKOV OZ. PRIHODKOV</p></b>
+        <p>Datum dokumenta: <span id="datumDanes">datum</span></p>
+
+        <b><p>ZBORNICA OZ. ZDRUŽENJE: <span id="narocnikIzpis">narocnik</span></p></b>
+
+        <p>
+            ŠT. STROŠKOVNEGA MESTA: <br>
+            ŠT. PROJEKTA:
+        </p>
+
+        <p>Vrsta/opis storitve: <b><span id="storitevIzpis">storitev</span></b></p>
+
+        <br>
+        <br>
+
+        <p>CENA/VREDNOST STORITVE: <b><span id="cenaIzpis">cena</span>€</b></p>
+
+        <p style="text-align: right;" class="text-right">Podpis:__________________________</p>
+        
+        <br>
+        <br>
+
+        <!-- Podatki našega oddelka -->
+
+        <p><b>
+            ZBORNICA OZ. ZDRUŽENJE: <span style="color: blue;" class="text-primary"> Marketing in organizacija dogodkov<br> 
+            KNJIŽITI V DOBRO </span>
+        </b></p>
+        <p>ŠT. STROŠKOVNEGA MESTA: <b>1541</b></p>
+        <p>ŠT. PROJEKTA: <b>637</b></p>
+        <p>Vrsta opis storitve: <b><span id="storitevIzpis2">storitev</span></b></p>
+
+        <br>
+        <br>
+
+        <p>CENA/VREDNOST STORITVE: <b><span id="cenaIzpis2">cena</span>€</b></p>
+
+        <p style="text-align: right;" class="text-right">Podpis:__________________________</p>
+
+
+    </div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
